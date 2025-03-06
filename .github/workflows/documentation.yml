@@ -35,7 +35,6 @@ jobs:
   deploy:
     # Only deploy on 'master' branch. It's probably still useful to check
     # if the docs actually build on other branches, too.
-    if: github.ref == 'refs/heads/master'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
